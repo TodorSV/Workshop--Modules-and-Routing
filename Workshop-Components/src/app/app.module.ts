@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostItemComponent } from './posts-list/post-item/post-item.component';
 import { HomeComponent } from './home/home.component';
 import { AddThemeComponent } from './theme/add-theme/add-theme.component';
+import { UserModule } from './user/user.module';
+import { ThemeModule } from './theme/theme.module';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { AddThemeComponent } from './theme/add-theme/add-theme.component';
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    UserModule,
+    ThemeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
