@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
-import { Theme } from './themes-list/types/theme';
-import { Post } from './themes-list/types/post';
+import { Theme } from './types/theme';
+import { Post } from './types/post';
 
 
 
