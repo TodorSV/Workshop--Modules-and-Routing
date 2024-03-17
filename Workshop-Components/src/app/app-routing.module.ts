@@ -4,10 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 
 // If path is empty and pathMatch is full, then redirect to /home
-const routes: Routes = [{ path: '', pathMatch: 'full', redirectTo: '/home' },
-{path: 'home', component: HomeComponent},
-{path: '**', redirectTo: '/404'},
-{path: '404', component: ErrorComponent}
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: '/404' },
+  { path: '404', component: ErrorComponent }
 ];
 
 @NgModule({
